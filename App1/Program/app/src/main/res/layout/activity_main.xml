@@ -13,9 +13,19 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:paddingTop="100dp"
+        android:text="one"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/secondInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="two"
+        android:paddingTop="10dp"
+        android:layout_below="@id/firstInput"
+        android:layout_alignLeft="@id/firstInput"/>
 
 </RelativeLayout>
