@@ -13,7 +13,6 @@
         android:id="@+id/firstInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="20dp"
         android:background="#F0A100"
         android:text="one"
         android:layout_gravity="center_horizontal" />
@@ -28,8 +27,8 @@
         android:layout_toRightOf="@id/firstInput" />
 
     <Button
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
         android:background="#FFFF00"
         android:text="+"
         android:layout_below="@+id/firstInput"
