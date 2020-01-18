@@ -5,33 +5,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="100dp"
+    android:paddingTop="50dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
     android:gravity="center_horizontal"
     tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/firstInput"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
         android:background="#F0A100"
-        android:text="one"
-        android:layout_gravity="center_horizontal" />
+        android:text="one" />
 
     <EditText
         android:id="@+id/secondInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#F0A100"
-        android:text="two"
-        android:layout_marginLeft="10dp"
-        android:layout_toRightOf="@id/firstInput" />
-
-    <Button
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:background="#FFFF00"
-        android:text="+"
+        android:layout_toRightOf="@id/firstInput"
+        android:layout_margin="5dp"
+        android:background="#F0A100"
+        android:text="two" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/firstInput"
-        android:layout_toLeftOf="@+id/firstInput" />
+        android:layout_alignLeft="@id/firstInput"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFFF00"
+        android:onClick="add"
+        android:padding="5dp"
+        android:text="@string/add" />
+
+    <Button
+        android:id="@+id/subtractButton"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstInput"
+        android:layout_alignRight="@id/firstInput"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#FFFF00"
+        android:onClick="add"
+        android:padding="5dp"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondInput"
+        android:layout_alignLeft="@id/secondInput"
+        android:layout_marginTop="20dp"
+        android:background="#FFFF00"
+        android:onClick="add"
+        android:padding="5dp"
+        android:text="*" />
+
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="@dimen/buttonWidth"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondInput"
+        android:layout_alignRight="@id/secondInput"
+        android:layout_marginTop="20dp"
+        android:background="#FFFF00"
+        android:onClick="add"
+        android:padding="5dp"
+        android:text="/" />
 
 </RelativeLayout>
