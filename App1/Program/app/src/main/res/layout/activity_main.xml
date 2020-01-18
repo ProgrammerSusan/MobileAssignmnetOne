@@ -38,9 +38,9 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
         android:background="#FFFF00"
-        android:onClick="add"
         android:padding="5dp"
-        android:text="@string/add" />
+        android:text="@string/add"
+        android:onClick="add" />
 
     <Button
         android:id="@+id/subtractButton"
@@ -51,9 +51,9 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="20dp"
         android:background="#FFFF00"
-        android:onClick="add"
         android:padding="5dp"
-        android:text="-" />
+        android:text="-"
+        android:onClick="subtract" />
 
     <Button
         android:id="@+id/multiplyButton"
@@ -63,9 +63,9 @@
         android:layout_alignLeft="@id/secondInput"
         android:layout_marginTop="20dp"
         android:background="#FFFF00"
-        android:onClick="add"
         android:padding="5dp"
-        android:text="*" />
+        android:text="*"
+        android:onClick="multiply"/>
 
     <Button
         android:id="@+id/divideButton"
@@ -75,8 +75,19 @@
         android:layout_alignRight="@id/secondInput"
         android:layout_marginTop="20dp"
         android:background="#FFFF00"
-        android:onClick="add"
         android:padding="5dp"
-        android:text="/" />
+        android:text="/"
+        android:onClick="divide" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/subtractButton"
+        android:layout_alignLeft="@id/subtractButton"
+        android:padding="10dp"
+        android:text="0"
+        android:background="#ADD8E6"/>
 
 </RelativeLayout>
