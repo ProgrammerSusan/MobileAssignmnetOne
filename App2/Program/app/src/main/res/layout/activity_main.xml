@@ -27,6 +27,7 @@
         android:layout_toRightOf="@id/firstName"
         android:padding="@dimen/textPad"
         android:background="@color/inputBackground"
+        android:maxLength="10"
         android:hint="First Name" />
 
     <TextView
@@ -49,6 +50,7 @@
         android:layout_marginTop="@dimen/textTop"
         android:padding="@dimen/textPad"
         android:background="@color/inputBackground"
+        android:maxLength="10"
         android:hint="Last Name" />
 
     <TextView
@@ -71,6 +73,7 @@
         android:layout_marginTop="@dimen/textTop"
         android:padding="@dimen/textPad"
         android:background="@color/inputBackground"
+        android:maxLength="10"
         android:hint="Birthday" />
 
     <TextView
@@ -123,6 +126,7 @@
         android:layout_below="@id/password"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:text="GENERATE"/>
+        android:text="GENERATE"
+        android:onClick="generate"/>
 
 </RelativeLayout>

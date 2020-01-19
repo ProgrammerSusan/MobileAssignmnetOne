@@ -34,15 +34,15 @@ public class AccountGenerator {
     }
 
     public String generatePassword(){
-        char firstInitial = this.firstName.charAt(0);
-        char lastInitial = this.lastName.charAt(this.lastName.length()-1);
-        String month = this.birthday.substring(0,3);
-        String year = this.birthday.substring(7);
-        String last = this.lastName.substring(0,4).toLowerCase();
+        String firstInitial = this.firstName.substring(0,1);
+        String lastLetter = this.firstName.substring(this.firstName.length()-1);
+        String month = this.birthday.substring(0,2);
+        String year = this.birthday.substring(8);
+        String last = this.lastName.substring(0,3);
         int firstLength = this.firstName.length();
         int lastLength = this.lastName.length();
 
-        String password = firstInitial + lastInitial + month + year + last + firstLength + lastLength;
+        String password = firstInitial + lastLetter + month + year + last + firstLength + lastLength;
         password = password.toLowerCase();
         return password;
     }
