@@ -20,4 +20,48 @@
         android:background="@color/textBackground"
         android:text="First Name" />
 
+    <TextView
+        android:id="@+id/lastName"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textLeft"
+        android:layout_below="@id/firstName"
+        android:padding="@dimen/textPad"
+        android:layout_marginTop="@dimen/textTop"
+        android:background="@color/textBackground"
+        android:text="Last Name" />
+
+    <TextView
+        android:id="@+id/birthday"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textLeft"
+        android:layout_below="@id/lastName"
+        android:padding="@dimen/textPad"
+        android:layout_marginTop="@dimen/textTop"
+        android:background="@color/textBackground"
+        android:text="Last Name" />
+
+    <TextView
+        android:id="@+id/userId"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textLeft"
+        android:layout_below="@id/birthday"
+        android:padding="@dimen/textPad"
+        android:layout_marginTop="@dimen/textTop"
+        android:background="@color/textBackground"
+        android:text="Last Name" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/textLeft"
+        android:layout_below="@id/userId"
+        android:padding="@dimen/textPad"
+        android:layout_marginTop="@dimen/textTop"
+        android:background="@color/textBackground"
+        android:text="Last Name" />
+
 </RelativeLayout>

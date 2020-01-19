@@ -3,4 +3,5 @@
     <dimen name="textWidth">110dp</dimen>
     <dimen name="textLeft">10dp</dimen>
     <dimen name="textPad">5dp</dimen>
+    <dimen name="textTop">20dp</dimen>
 </resources>
