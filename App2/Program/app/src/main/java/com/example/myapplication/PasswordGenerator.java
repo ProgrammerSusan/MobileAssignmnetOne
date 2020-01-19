@@ -31,7 +31,7 @@ public class PasswordGenerator {
         String last = this.lastName.substring(0,4);
         int firstLength = this.firstName.length();
         int lastLength = this.lastName.length();
-        
+
         String password = firstInitial + lastInitial + month + year + last + firstLength + lastLength;
         return password;
     }
