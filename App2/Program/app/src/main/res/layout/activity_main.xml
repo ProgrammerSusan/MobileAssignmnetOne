@@ -20,6 +20,15 @@
         android:background="@color/textBackground"
         android:text="First Name" />
 
+    <EditText
+        android:id="@+id/firstNameInput"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/firstName"
+        android:padding="@dimen/textPad"
+        android:background="@color/inputBackground"
+        android:hint="First Name" />
+
     <TextView
         android:id="@+id/lastName"
         android:layout_width="@dimen/textWidth"
@@ -31,6 +40,17 @@
         android:background="@color/textBackground"
         android:text="Last Name" />
 
+    <EditText
+        android:id="@+id/lastNameInput"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/lastName"
+        android:layout_below="@id/firstName"
+        android:layout_marginTop="@dimen/textTop"
+        android:padding="@dimen/textPad"
+        android:background="@color/inputBackground"
+        android:hint="Last Name" />
+
     <TextView
         android:id="@+id/birthday"
         android:layout_width="@dimen/textWidth"
@@ -40,7 +60,18 @@
         android:padding="@dimen/textPad"
         android:layout_marginTop="@dimen/textTop"
         android:background="@color/textBackground"
-        android:text="Last Name" />
+        android:text="Birthday" />
+
+    <EditText
+        android:id="@+id/birthdayInput"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/firstName"
+        android:layout_below="@id/lastName"
+        android:layout_marginTop="@dimen/textTop"
+        android:padding="@dimen/textPad"
+        android:background="@color/inputBackground"
+        android:hint="Birthday" />
 
     <TextView
         android:id="@+id/userId"
@@ -51,7 +82,7 @@
         android:padding="@dimen/textPad"
         android:layout_marginTop="@dimen/textTop"
         android:background="@color/textBackground"
-        android:text="Last Name" />
+        android:text="ID" />
 
     <TextView
         android:id="@+id/password"
@@ -62,6 +93,6 @@
         android:padding="@dimen/textPad"
         android:layout_marginTop="@dimen/textTop"
         android:background="@color/textBackground"
-        android:text="Last Name" />
+        android:text="Password" />
 
 </RelativeLayout>
