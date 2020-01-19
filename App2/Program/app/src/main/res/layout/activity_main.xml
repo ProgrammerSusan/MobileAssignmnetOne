@@ -85,6 +85,17 @@
         android:text="ID" />
 
     <TextView
+        android:id="@+id/idOutput"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/userId"
+        android:layout_below="@id/birthday"
+        android:layout_marginTop="@dimen/textTop"
+        android:padding="@dimen/textPad"
+        android:background="@color/inputBackground"
+        android:hint="User ID" />
+
+    <TextView
         android:id="@+id/password"
         android:layout_width="@dimen/textWidth"
         android:layout_height="wrap_content"
@@ -94,5 +105,16 @@
         android:layout_marginTop="@dimen/textTop"
         android:background="@color/textBackground"
         android:text="Password" />
+
+    <TextView
+        android:id="@+id/passwordOutput"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/password"
+        android:layout_below="@id/userId"
+        android:layout_marginTop="@dimen/textTop"
+        android:padding="@dimen/textPad"
+        android:background="@color/inputBackground"
+        android:hint="User ID" />
 
 </RelativeLayout>
