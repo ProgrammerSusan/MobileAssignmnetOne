@@ -117,4 +117,12 @@
         android:background="@color/inputBackground"
         android:hint="User ID" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="GENERATE"/>
+
 </RelativeLayout>

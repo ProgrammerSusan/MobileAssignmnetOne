@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="textWidth">110dp</dimen>
-    <dimen name="textLeft">50dp</dimen>
+    <dimen name="textLeft">75dp</dimen>
     <dimen name="textPad">5dp</dimen>
     <dimen name="textTop">20dp</dimen>
 </resources>
