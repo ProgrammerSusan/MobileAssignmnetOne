@@ -30,7 +30,7 @@
                 android:text="Credits " />
 
             <EditText
-                android:id="@+id/firstNameInput"
+                android:id="@+id/creditsInput"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@id/credits"
@@ -130,9 +130,9 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="50dp"
                 android:textSize="18dp"
-               android:textColor="@color/textColor"
-               android:padding="5dp"
-               android:text="Other Costs" />
+                android:textColor="@color/textColor"
+                android:padding="5dp"
+                android:text="Other Costs" />
 
             <CheckBox
                 android:id="@+id/dormBox"
@@ -196,8 +196,8 @@
                 android:layout_below="@id/totaltext"
                 android:layout_marginTop="20dp"
                 android:layout_centerHorizontal="true"
-                android:text="Calculate"/>
-            <!--android:onClick="calculate" goes up in the button code^^-->
+                android:text="Calculate"
+                android:onClick="calculate"/>
         </RelativeLayout>
     </ScrollView>
 </RelativeLayout>
