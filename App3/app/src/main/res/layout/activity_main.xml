@@ -143,7 +143,6 @@
                 android:padding="5dp"
                 android:textSize="18dp"
                 android:background="@color/inputBackground"
-                android:maxLength="10"
                 android:hint="Total" />
 
             <Button
@@ -152,8 +151,8 @@
                 android:layout_below="@id/totalLabel"
                 android:layout_marginTop="20dp"
                 android:layout_centerHorizontal="true"
-                android:text="GENERATE" />
-            <!--android:onClick="calculate" goes up in that button^-->
+                android:text="calculate"
+                android:onClick="calculate"/>
 
         </RelativeLayout>
     </ScrollView>
