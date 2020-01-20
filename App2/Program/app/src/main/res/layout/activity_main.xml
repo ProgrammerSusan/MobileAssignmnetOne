@@ -79,6 +79,16 @@
         android:maxLength="10"
         android:hint="Birthday" />
 
+    <View
+        android:id="@+id/bar"
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:layout_below="@id/birthday"
+        android:layout_alignLeft="@id/birthday"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"/>
+
     <TextView
         android:id="@+id/userId"
         android:layout_width="150dp"
