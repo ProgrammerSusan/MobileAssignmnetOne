@@ -19,17 +19,12 @@ public class MainActivity extends AppCompatActivity {
         EditText addition = (EditText)findViewById(R.id.annualInput);
         EditText rate = (EditText)findViewById(R.id.returnInput);
         EditText year = (EditText)findViewById(R.id.yearsInput);
-
-        float current = Float.valueOf(principal.getText().toString());
-        float annual = Float.valueOf(addition.getText().toString());
-        float yearlyRate = Float.valueOf(rate.getText().toString());
-        float yearsOfInvestment = Float.valueOf(year.getText().toString());
-
-        RetirementCalculator userSavings = new RetirementCalculator(current, annual, yearlyRate, yearsOfInvestment);
-
-        int total = userSavings.calculateRetirement();
-
+        EditText [] inputs = {principal, addition, rate, year};
         TextView displayTotal = (TextView)findViewById(R.id.totalOutput);
+
+        RetirementCalculator userSavings = new RetirementCalculator();
+
+        int total = userSavings.retirement(inputs);
         displayTotal.setText(total+"");
     }
 }
