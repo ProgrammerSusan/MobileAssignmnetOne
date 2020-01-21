@@ -34,32 +34,9 @@ public class MainActivity extends AppCompatActivity {
         Boolean drm = dorm.isChecked();
         Boolean dine = dining.isChecked();
         Boolean park = parking.isChecked();
-
         int tuition = 0;
-        if (ug)
-            if(in)
-                tuition = cred * 500;
-            else
-                tuition = cred * 1000;
-        else if (grad)
-            if(in)
-                tuition = cred * 800;
-            else
-                tuition = cred * 1600;
-        else if (ndeg)
-            if (in)
-                tuition = cred * 300;
-            else
-                tuition = cred * 600;
 
-        if(drm)
-            tuition = tuition + 5000;
-
-        if(dine)
-            tuition = tuition + 2000;
-
-        if (park)
-            tuition = tuition + 1000;
+        tuition = math.mathmatics(cred, ug, grad, ndeg, in, out, drm, dine, park, tuition);
 
         TextView total = (TextView)findViewById(R.id.totalView);
         total.setText(tuition+" ");
