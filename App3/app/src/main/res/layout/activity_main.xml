@@ -37,7 +37,7 @@
                 android:padding="5dp"
                 android:background="@color/inputBackground"
                 android:maxLength="10"
-                android:hint="First Name" />
+                android:hint="Current Principal" />
 
             <TextView
                 android:id="@+id/annualAdditions"

@@ -10,7 +10,7 @@ public class RetirementCalculator {
     public RetirementCalculator(float currentPrincipal, float annualAddition, float rate,  float years){
         this.currentPrincipal = currentPrincipal;
         this.annualAddition = annualAddition;
-        this.rate = rate/100;
+        this.rate = rate;
         this.years = years;
     }
 
