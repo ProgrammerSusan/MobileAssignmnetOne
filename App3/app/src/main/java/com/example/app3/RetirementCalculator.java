@@ -22,6 +22,7 @@ public class RetirementCalculator {
 
     public float [] validate(EditText[] inputs){
         float [] values = new float[inputs.length];
+        float [] invalid = {0};
         for(int i = 0; i < inputs.length; i++){
             try{
                 values[i] = Float.parseFloat(inputs[i].getText().toString());
@@ -29,11 +30,15 @@ public class RetirementCalculator {
             }
             catch(Exception e){
                 inputs[i].setBackgroundColor(Color.RED);
-                float [] invalid = {0};
-                return invalid;
+                invalid[0] = -1;
             }
         }
-        return values;
+        if(invalid[0] == -1){
+            return invalid;
+        }
+        else{
+            return values;
+        }
     }
 
     public int calculateRetirement(float currentPrincipal, float annualAddition, float rate,  float years){
