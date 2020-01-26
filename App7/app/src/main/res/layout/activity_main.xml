@@ -95,7 +95,7 @@
         android:layout_below="@id/score"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:text="Next"/>
-    <!--android:onClick="Next"/>-->
+        android:text="Next"
+        android:onClick="next"/>
 
 </RelativeLayout>

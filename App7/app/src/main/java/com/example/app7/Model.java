@@ -2,9 +2,8 @@ package com.example.app7;
 
 public class Model
 {
-    public static int qnumber = 0, rightans = 0;
+    public static int qnumber = 0, rightans = 0, totalq = 0;
     public static boolean correct = true;
-    public static String q, a1, a2, a3, a4;
     public static String[] questions =
             {"Which of the following is not a computer language?",
             "Who was the famous Computer Scientist who broke the nazi Enigma code in WWII?",
@@ -31,56 +30,39 @@ public class Model
             {"Switching", "Conversion", "Type Casting", "You can't"}};
     public static char[] key = {'d','a','c','a','b','b','b','b','b','c'};
 
-    public static void answer(boolean a,boolean b,boolean c,boolean d)
+    public static boolean answer(boolean a,boolean b,boolean c,boolean d)
     {
         if(a)
             if(key[qnumber]=='a')
-            {
                 correct = true;
-                rightans++;
-            }
             else
                 correct = false;
         else if(b)
             if(key[qnumber]=='b')
-            {
                 correct = true;
-                rightans++;
-            }
             else
                 correct = false;
         else if(c)
             if(key[qnumber]=='c')
-            {
                 correct = true;
-                rightans++;
-            }
             else
                 correct = false;
         else
             if(key[qnumber]=='d')
-            {
                 correct = true;
-                rightans++;
-            }
             else
                 correct = false;
 
-        if(qnumber==10)
+        if(qnumber==9)
             qnumber = 0;
         else
             qnumber++;
-            //generate();
-    }
 
-    public static void initialize()
-    {
-        qnumber = 0;
-        q = questions[qnumber];
-        a1 = answers[qnumber][0];
-        a2 = answers[qnumber][1];
-        a3 = answers[qnumber][2];
-        a4 = answers[qnumber][3];
-        rightans = 0;
+        totalq++;
+
+        if(correct)
+            rightans++;
+
+        return correct;
     }
 }
