@@ -53,9 +53,9 @@ public class Model
             else
                 correct = false;
 
-        if(qnumber==9)
-            qnumber = 0;
-        else
+        //if(qnumber==9)
+            //qnumber = 0;
+        //else
             qnumber++;
 
         totalq++;
