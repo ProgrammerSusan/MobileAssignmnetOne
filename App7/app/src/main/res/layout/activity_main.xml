@@ -12,8 +12,90 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:textSize="18dp"
+        android:text="Question"/>
+
+    <RadioGroup
+    android:id="@+id/qRadio"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/question"
+    android:layout_marginLeft="25dp"
+    android:padding="5dp">
+
+    <RadioButton
+        android:id="@+id/a"
+        android:text="A"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+   <RadioButton
+        android:id="@+id/b"
+        android:text="B"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+    <RadioButton
+        android:id="@+id/c"
+        android:text="C"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+    <RadioButton
+        android:id="@+id/d"
+        android:text="D"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />-->
+
+</RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qRadio"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Submit"/>
+        <!--android:onClick="submit"/>-->
+
+    <TextView
+        android:id="@+id/response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:textColor="@color/text"
+        android:text="Submit Answer"/>
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/response"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp"
+        android:textColor="@color/text"
+        android:text="0/0"/>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/score"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Next"/>
+    <!--android:onClick="Next"/>-->
 
 </RelativeLayout>
