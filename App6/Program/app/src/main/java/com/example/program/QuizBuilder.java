@@ -24,26 +24,26 @@ public class QuizBuilder {
         double probability = random.nextDouble();
 
         if(probability <= 0.25){
-            numberOne = random.nextInt(1000);
-            numberTwo = random.nextInt(1000);
+            numberOne = random.nextInt(999) + 1;
+            numberTwo = random.nextInt(999) + 1;
             operator = "+";
             answer = numberOne + numberTwo;
         }
         else if(probability <= 0.50){
-            numberOne = random.nextInt(1000);
-            numberTwo = random.nextInt(1000);
+            numberOne = random.nextInt(999) + 1;
+            numberTwo = random.nextInt(999) + 1;
             operator = "-";
             answer = numberOne - numberTwo;
         }
         else if(probability <= 0.75) {
-            numberOne = random.nextInt(100);
-            numberTwo = random.nextInt(100);
+            numberOne = random.nextInt(99) + 1;
+            numberTwo = random.nextInt(99) + 1;
             operator = "*";
             answer = numberOne * numberTwo;
         }
         else{
-            numberOne = random.nextInt(100);
-            numberTwo = random.nextInt(100);
+            numberOne = random.nextInt(99) + 1;
+            numberTwo = random.nextInt(999) + 1;
             operator = "/";
             answer = numberOne / numberTwo;
         }
