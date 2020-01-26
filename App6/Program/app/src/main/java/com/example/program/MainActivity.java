@@ -1,6 +1,8 @@
 package com.example.program;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -39,13 +41,19 @@ public class MainActivity extends AppCompatActivity {
             String userTotal = build.getTotalCorrect() + "";
             totalCorrect.setText(userTotal);
             message.setText("Correct");
+            message.setTextColor(Color.GREEN);
         }
         else{
             message.setText("Incorrect");
+            message.setTextColor(Color.RED);
         }
     }
 
     public void nextQuestion(View v){
+        TextView message = (TextView)findViewById(R.id.message);
+        message.setText("Submit Answer");
+        message.setTextColor(Color.BLACK);
+
         build.generateQuestion();
 
         Button submit = (Button)findViewById(R.id.submit);
@@ -76,8 +84,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void initialize(){
-        // QuizBuilder build = new QuizBuilder();
         build.generateQuestion();
+
+        Button next = (Button)findViewById(R.id.next);
+        next.setEnabled(false);
 
         TextView numberOne = (TextView)findViewById(R.id.firstNumber);
         String numberOneValue = build.getNumberOne() + "";
