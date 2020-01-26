@@ -70,16 +70,34 @@
         android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/score"
+        android:id="@+id/divider"
         android:layout_below="@id/message"
         android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/" />
+
+    <TextView
+        android:id="@+id/correct"
+        android:layout_below="@id/message"
+        android:layout_toLeftOf="@id/divider"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_toRightOf="@id/divider"
+        android:layout_toEndOf="@id/divider"
+        android:layout_below="@id/message"
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <Button
         android:id="@+id/next"
-        android:layout_below="@id/score"
+        android:layout_below="@id/divider"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
