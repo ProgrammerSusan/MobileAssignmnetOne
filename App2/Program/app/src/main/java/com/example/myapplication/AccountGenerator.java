@@ -5,12 +5,14 @@ public class AccountGenerator {
     private String lastName;
     private String birthday;
 
+    //store all input in object
     public AccountGenerator(String first, String last, String birth){
         this.firstName = first;
         this.lastName = last;
         this.birthday = birth;
     }
 
+    //get methods for debugging
     public String getFirstName(){
         return this.firstName;
     }
@@ -23,6 +25,7 @@ public class AccountGenerator {
         return this.birthday;
     }
 
+    //generates username
     public String generateUsername(){
         char firstInitial = this.firstName.charAt(0);
         String lastName = this.lastName;
@@ -33,6 +36,7 @@ public class AccountGenerator {
         return password;
     }
 
+    //generates password
     public String generatePassword(){
         String firstInitial = this.firstName.substring(0,1);
         String lastLetter = this.firstName.substring(this.firstName.length()-1);

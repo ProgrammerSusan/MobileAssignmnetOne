@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    // Methods to perform operations
     public void add(View v){
         EditText firstNumberText = (EditText)findViewById(R.id.firstInput);
         EditText secondNumberText = (EditText)findViewById(R.id.secondInput);
