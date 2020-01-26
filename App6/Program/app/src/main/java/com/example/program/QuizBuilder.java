@@ -67,6 +67,10 @@ public class QuizBuilder {
         return numberTwo;
     }
 
+    public String getOperator(){
+        return operator;
+    }
+
     private void incrementCorrect(){
         totalCorrect++;
     }
