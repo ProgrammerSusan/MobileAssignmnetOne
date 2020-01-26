@@ -8,31 +8,38 @@
     android:paddingTop="100dp"
     tools:context=".MainActivity">
 
+<!--    Starts out black, colors change as user inputs color values-->
     <TextView
         android:id="@+id/color"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="#000"/>
 
-    <TextView
+
+    <EditText
         android:id="@+id/red"
         android:layout_width="@dimen/rgbDimen"
         android:layout_height="@dimen/rgbDimen"
         android:layout_below="@id/color"
         android:layout_toLeftOf="@id/green"
         android:layout_margin="@dimen/rgbPad"
-        android:background="#FF0000" />
+        android:background="#FF0000"
+        android:text="0"
+        android:textAlignment="center" />
 
-    <TextView
+    <EditText
         android:id="@+id/green"
         android:layout_width="@dimen/rgbDimen"
         android:layout_height="@dimen/rgbDimen"
         android:layout_below="@id/color"
         android:layout_margin="@dimen/rgbPad"
         android:layout_centerHorizontal="true"
-        android:background="#00FF00"/>
+        android:background="#00FF00"
+        android:text="0"
+        android:textAlignment="center" />
 
-    <TextView
+    <EditText
         android:id="@+id/blue"
         android:layout_width="@dimen/rgbDimen"
         android:layout_height="@dimen/rgbDimen"
@@ -40,6 +47,8 @@
         android:layout_below="@id/color"
         android:layout_toRightOf="@id/green"
         android:layout_margin="@dimen/rgbPad"
-        android:background="#0000FF"/>
+        android:background="#0000FF"
+        android:text="0"
+        android:textAlignment="center" />
 
 </RelativeLayout>
