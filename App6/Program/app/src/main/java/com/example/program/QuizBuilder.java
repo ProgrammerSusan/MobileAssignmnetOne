@@ -49,13 +49,15 @@ public class QuizBuilder {
         }
     }
 
-    public void checkAnswer(int userAnswer){
+    public boolean checkAnswer(int userAnswer){
         if(userAnswer == answer){
             incrementCorrect();
             incrementQuestions();
+            return true;
         }
         else{
             incrementQuestions();
+            return false;
         }
     }
 

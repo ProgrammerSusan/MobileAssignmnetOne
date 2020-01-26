@@ -66,7 +66,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="18dp"
-        android:text="SUBMIT" />
+        android:text="SUBMIT"
+        android:onClick="submitAnswer" />
 
     <TextView
         android:id="@+id/message"
@@ -119,6 +120,7 @@
         android:textSize="18dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NEXT" />
+        android:text="NEXT"
+        android:onClick="nextQuestion" />
 
 </RelativeLayout>
