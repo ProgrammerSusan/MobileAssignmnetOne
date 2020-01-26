@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Button next = (Button)findViewById(R.id.next);
         next.setEnabled(true);
 
-        TextView userAnswer = (TextView)findViewById(R.id.answer);
+        EditText userAnswer = (EditText) findViewById(R.id.answer);
         int answer = Integer.parseInt(userAnswer.getText().toString());
 
         boolean correct = build.checkAnswer(answer);
@@ -55,6 +56,9 @@ public class MainActivity extends AppCompatActivity {
         message.setTextColor(Color.BLACK);
 
         build.generateQuestion();
+
+        EditText userAnswer = (EditText) findViewById(R.id.answer);
+        userAnswer.setText("");
 
         Button submit = (Button)findViewById(R.id.submit);
         submit.setEnabled(true);
