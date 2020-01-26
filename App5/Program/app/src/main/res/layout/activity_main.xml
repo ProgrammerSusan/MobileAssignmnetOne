@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:background="#000"/>
 
-
+    <!--input boxes-->
     <EditText
         android:id="@+id/red"
         android:layout_width="@dimen/rgbDimen"

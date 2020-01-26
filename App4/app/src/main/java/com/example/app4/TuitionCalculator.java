@@ -2,7 +2,7 @@ package com.example.app4;
 
 import android.widget.TextView;
 
-public class math {
+public class TuitionCalculator {
     public static int mathmatics(int cred, boolean ug, boolean grad, boolean ndeg,
                             boolean in, boolean out, boolean drm, boolean dine,
                             boolean park, int tuition)

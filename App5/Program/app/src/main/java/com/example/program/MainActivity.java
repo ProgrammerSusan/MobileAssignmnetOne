@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         ColorChanger listener = new ColorChanger();
 
+        //adding listeners to each edittext
         red.addTextChangedListener(listener);
         green.addTextChangedListener(listener);
         blue.addTextChangedListener(listener);
@@ -53,6 +54,8 @@ public class MainActivity extends AppCompatActivity {
             int greenValue;
             int blueValue;
 
+            //Parsing to integer 0-255
+            //Invalid inputs treated as 0
             try {
                 redValue = Integer.parseInt(red.getText().toString());
                 if(redValue < 0){
@@ -90,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
                 greenValue = 0;
             }
 
+            //sets background color of large textbox
             color.setBackgroundColor(Color.rgb(redValue, greenValue, blueValue));
         }
     }

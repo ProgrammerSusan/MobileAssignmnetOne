@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        build = new QuizBuilder();
+        build = new QuizBuilder(); //set private variable
         initialize();
     }
 

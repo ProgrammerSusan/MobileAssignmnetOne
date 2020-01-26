@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         Boolean park = parking.isChecked();
         int tuition = 0;
 
-        tuition = math.mathmatics(cred, ug, grad, ndeg, in, out, drm, dine, park, tuition);
+        tuition = TuitionCalculator.mathmatics(cred, ug, grad, ndeg, in, out, drm, dine, park, tuition);
 
         TextView total = (TextView)findViewById(R.id.totalView);
         total.setText(tuition+" ");

@@ -23,6 +23,7 @@ public class QuizBuilder {
         Random random = new Random();
         double probability = random.nextDouble();
 
+        //chooses operator and random numbers to display
         if(probability <= 0.25){
             numberOne = random.nextInt(999) + 1;
             numberTwo = random.nextInt(999) + 1;
@@ -49,6 +50,8 @@ public class QuizBuilder {
         }
     }
 
+    //takes in user answer and compares to stored answer
+    //increments user score if answer is correct
     public boolean checkAnswer(int userAnswer){
         if(userAnswer == answer){
             incrementCorrect();
@@ -61,6 +64,7 @@ public class QuizBuilder {
         }
     }
 
+    //get methods
     public int getNumberOne(){
         return numberOne;
     }
@@ -73,19 +77,20 @@ public class QuizBuilder {
         return operator;
     }
 
-    private void incrementCorrect(){
-        totalCorrect++;
-    }
-
-    private void incrementQuestions(){
-        totalQuestions++;
-    }
-
     public int getTotalQuestions(){
         return totalQuestions;
     }
 
     public int getTotalCorrect(){
         return totalCorrect;
+    }
+
+    //Increments answers for scores
+    private void incrementCorrect(){
+        totalCorrect++;
+    }
+
+    private void incrementQuestions(){
+        totalQuestions++;
     }
 }
