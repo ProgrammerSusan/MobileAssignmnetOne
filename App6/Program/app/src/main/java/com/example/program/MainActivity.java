@@ -7,11 +7,12 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    private QuizBuilder build;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        build = new QuizBuilder();
         initialize();
     }
 
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         TextView userAnswer = (TextView)findViewById(R.id.answer);
         int answer = Integer.parseInt(userAnswer.getText().toString());
 
-        QuizBuilder build = new QuizBuilder();
+        // QuizBuilder build = new QuizBuilder();
         boolean correct = build.checkAnswer(answer);
 
         TextView totalQuestions = (TextView)findViewById(R.id.total);
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void nextQuestion(View v){
-        QuizBuilder build = new QuizBuilder();
+       // QuizBuilder build = new QuizBuilder();
         build.generateQuestion();
 
         Button submit = (Button)findViewById(R.id.submit);
@@ -77,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void initialize(){
-        QuizBuilder build = new QuizBuilder();
+        // QuizBuilder build = new QuizBuilder();
         build.generateQuestion();
 
         TextView numberOne = (TextView)findViewById(R.id.firstNumber);
