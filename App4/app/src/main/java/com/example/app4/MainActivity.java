@@ -25,7 +25,11 @@ public class MainActivity extends AppCompatActivity {
         CheckBox dining = (CheckBox)findViewById(R.id.diningBox);
         CheckBox parking = (CheckBox)findViewById(R.id.parkBox);
 
-        int cred = Integer.parseInt(credits.getText().toString());
+        int cred;
+        try{
+            cred = Integer.parseInt(credits.getText().toString());}
+        catch(NumberFormatException ne){cred = 0;}
+
         Boolean ug = undergrad.isChecked();
         Boolean grad = graduate.isChecked();
         Boolean ndeg = nodeg.isChecked();
