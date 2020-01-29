@@ -26,7 +26,8 @@
         android:layout_margin="@dimen/rgbPad"
         android:background="#FF0000"
         android:text="0"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="#FFFFFF" />
 
     <EditText
         android:id="@+id/green"
@@ -35,9 +36,10 @@
         android:layout_below="@id/color"
         android:layout_margin="@dimen/rgbPad"
         android:layout_centerHorizontal="true"
-        android:background="#00FF00"
+        android:background="#006233"
         android:text="0"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="#FFFFFF" />
 
     <EditText
         android:id="@+id/blue"
@@ -49,6 +51,7 @@
         android:layout_margin="@dimen/rgbPad"
         android:background="#0000FF"
         android:text="0"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>
